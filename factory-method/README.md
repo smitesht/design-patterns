@@ -79,7 +79,7 @@ public:
     ~Neo4jGraphDB() {}
 };
 
-class FactoryClass
+class DBFactoryClass
 {
 public:
 
@@ -87,7 +87,7 @@ public:
     virtual ~FactoryClass() {};
 };
 
-class MySQLFactoryClass : public FactoryClass
+class MySQLFactoryClass : public DBFactoryClass
 {
 
 public:
@@ -102,7 +102,7 @@ public:
     }
 };
 
-class SQLServerFactoryClass : public FactoryClass
+class SQLServerFactoryClass : public DBFactoryClass
 {
 public:
     IDatabase* CreateObject()
@@ -116,7 +116,7 @@ public:
     }
 };
 
-class MongoDbFactoryClass : public FactoryClass
+class MongoDbFactoryClass : public DBFactoryClass
 {
 public:
     IDatabase* CreateObject()
@@ -130,7 +130,7 @@ public:
     }
 };
 
-class Neo4jGraphDBFactoryClass : public FactoryClass
+class Neo4jGraphDBFactoryClass : public DBFactoryClass
 {
 public:
     IDatabase* CreateObject()
@@ -146,7 +146,7 @@ public:
 
 int main()
 {
-    FactoryClass* pFactory = nullptr;
+    DBFactoryClass* pFactory = nullptr;
     IDatabase* pDB;
 
     pFactory = new MySQLFactoryClass();
