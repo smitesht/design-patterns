@@ -81,10 +81,10 @@ public:
 
 class DBFactoryClass
 {
-public:
+public: 
 
     virtual IDatabase* CreateObject() = 0;
-    virtual ~FactoryClass() {};
+    virtual ~DBFactoryClass() {};
 };
 
 class MySQLFactoryClass : public DBFactoryClass
@@ -98,7 +98,7 @@ public:
 
     ~MySQLFactoryClass()
     {
-
+        
     }
 };
 
