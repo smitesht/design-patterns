@@ -5,9 +5,9 @@
 - It is also called as factory of factories.
 - It encapsulates the creation of multiple related objects without exposing the instantiation logic to the client.
 
-## ABstract Factory pattern solves following problems
+## Abstract Factory pattern solves the following problems
 
-**1) Encapsulation of Object Creation:** It encapsulates the object creation logiv within a separate class or set of classes, abstracting it away from the client code. This allows the client code to work with abstract interfaces rather than concrete implementations, promoting loose coupling and making the system more flexible and easy to maintian.
+**1) Encapsulation of Object Creation:** It encapsulates the object creation logic within a separate class or set of classes, abstracting it away from the client code. This allows the client code to work with abstract interfaces rather than concrete implementations, promoting loose coupling and making the system more flexible and easy to maintain.
 
 **2) Dependency Inversion:** It promotes dependency inversion by allowing clients to depend on abstractions ( e.g. interfaces or abstract classes) rather than concrete implementations.
 
