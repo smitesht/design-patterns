@@ -88,6 +88,8 @@ The above program thow error when we replace Bicycle object to base class Vehicl
 
 ## With LSP
 
+![alt text](image.png)
+
 ```cpp
 
 class Vehicle
@@ -164,4 +166,4 @@ int main()
 
 In the above code we can easily replace subcalsss object to superclass object, and program behave correctly.
 
-![alt text](image.png)
+
