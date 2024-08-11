@@ -1,22 +1,28 @@
 # Decorator Design Pattern
 
-- The decorator pattern is a structure design pattern, and also known as wrapper pattern.
+- The decorator pattern is a structure design pattern known as a wrapper pattern.
 
 ## Intent
 
-Attach additional resposibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
+Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
 
 ## Details:
 
-It is also known as wrapper pattern. A wrapper is like a topping that surrounds an object. The enclosing object is often called a decorator which conforms (obeys) to the interface of the component that it decorates.
+It is also known as a wrapper pattern. A wrapper is like a topping that surrounds an object. The enclosing object is often called a decorator which conforms (obeys) to the interface of the component that it decorates.
 
-The pattern is useful when you want to add responsibilities to object without subclassing and is an alternative to extending functionality using inheritance.
+The pattern is useful when you want to add responsibilities to an object without subclassing and is an alternative to extending functionality using inheritance.
 
 ## UML Diagram
 
+![image](https://github.com/user-attachments/assets/ee88951f-27d2-4e2b-9c88-5a4d5440dca6)
+
+
 ## Example
 
-We have a requirement to implement Text class that provide funcationalities to display Plain , Bold , Italic, Underline text. All the functionalities must be independent without harming each other.
+We have a requirement to implement a Text class that provides functionalities to display Plain, Bold, Italic, and Underline text. All the functionalities must be independent without harming each other.
+
+![image](https://github.com/user-attachments/assets/83e32b50-4413-447f-afa3-53916318d1f7)
+
 
 ## Code
 
