@@ -6,3 +6,4 @@ This folder contains the SOLID design principle
 - [Open Closed Principle](https://github.com/smitesht/design-patterns/tree/main/SOLID-Principles/OpenClose)
 - [Liskov Substitution Principle](https://github.com/smitesht/design-patterns/tree/main/SOLID-Principles/LiskovSubstitutionPrinciple)
 - [Interface Segregation Principle](https://github.com/smitesht/design-patterns/tree/main/SOLID-Principles/InterfaceSegregation)
+- [Dependency Inversion Principle](https://github.com/smitesht/design-patterns/tree/main/SOLID-Principles/DependencyInversionPrinciple)

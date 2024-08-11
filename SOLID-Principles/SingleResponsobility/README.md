@@ -37,13 +37,13 @@ class Book{
 };
 ```
 
-Consider the above example, the Book class holding multiple responsibilties:
+Consider the above example, the Book class holding multiple responsibilities:
 
 - Printing book details
-- Daving book details to database
+- Saving book details to the database
 - Printing book content
 
-If we need to change how books are saved to the database, we must modify the Book class, which can introducing bugs of side effects.
+If we need to change how books are saved to the database, we must modify the Book class, which can introduce bugs of side effects.
 
 ## With SRP
 
