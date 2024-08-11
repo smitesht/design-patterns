@@ -1,27 +1,3 @@
-# Decorator Design Pattern
-
-- The decorator pattern is a structure design pattern, and also known as wrapper pattern.
-
-## Intent
-
-Attach additional resposibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
-
-## Details:
-
-It is also known as wrapper pattern. A wrapper is like a topping that surrounds an object. The enclosing object is often called a decorator which conforms (obeys) to the interface of the component that it decorates.
-
-The pattern is useful when you want to add responsibilities to object without subclassing and is an alternative to extending functionality using inheritance.
-
-## UML Diagram
-
-## Example
-
-We have a requirement to implement Text class that provide funcationalities to display Plain , Bold , Italic, Underline text. All the functionalities must be independent without harming each other.
-
-## Code
-
-```cpp
-
 #include <iostream>
 #include <string>
 #include <memory>
@@ -51,7 +27,7 @@ public:
     }
 };
 
-class TextDecorator : public IText
+class TextDecorator : public IText 
 {
 private:
     unique_ptr<IText> textComponent;
@@ -61,7 +37,7 @@ public:
     TextDecorator(unique_ptr<IText> component)
         :textComponent(std::move(component))
     {}
-
+    
     string render() override
     {
         return textComponent->render();
@@ -134,15 +110,3 @@ int main()
     unique_ptr<TextDecorator> underlineText = make_unique<UnderlineText>(std::move(italicText));
     cout << underlineText->render() << endl;
 }
-
-OUTPUT:
-
-Hello World
-<b>Hello World</b>
-<i><b>Hello World</b></i>
-<u><i><b>Hello World</b></i></u>
-Dtor UnderlineText...
-Dtor ItalicText...
-Dtor BoldText...
-
-```
