@@ -6,13 +6,13 @@ Dependency Inversion Principle state that high-level modules should not depend o
 
 - **Decoupling**: DIP promotes decoupling of components. making the system more modular and easier to maintain.
 - **Flexibility**: It allows for easy swapping of implementations without affecting the high-level module.
-- **Testability**: By depending on abstractions, high-level modules can be wasily tested using mock implementations.
-- **Maintaninability**: Changes in low-level modules do not impact high-level modules, leading to a more maintanable system.
-- **Reusability**: Promotes resuability of high-level modules across different projects by relying on abstract interfaces.
+- **Testability**: By depending on abstractions, high-level modules can be easily tested using mock implementations.
+- **Maintaninability**: Changes in low-level modules do not impact high-level modules, leading to a more maintainable system.
+- **Reusability**: Promotes reusability of high-level modules across different projects by relying on abstract interfaces.
 
 ## Without DIP
 
-In this approach NotificationSender directly depends on EmailSender or SmsSender rather than abstraction. This create problem when we want to change or add new sender.
+In this approach, NotificationSender directly depends on EmailSender or SmsSender rather than abstraction. This creates a problem when we want to change or add a new sender.
 
 ```cpp
 
