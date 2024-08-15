@@ -10,7 +10,9 @@ It converts the interface of a class into another interface that clients expect.
 
 ### UML Diagram
 
-### Types of Adapter Pattern
+![image](https://github.com/user-attachments/assets/cf864eec-5e66-47a1-960a-499ed4bbe4d3)
+
+### Types of Adapter Patterns
 
 There are mainly two types of Adapter Patterns
 
@@ -22,6 +24,9 @@ There are mainly two types of Adapter Patterns
 The class Adapter Pattern uses multiple inheritance to adapt one interface to another. It inherits from both the target interface and the adaptee class.
 
 Since it uses inheritance, it can only be used in languages that support multiple inheritance
+
+![image](https://github.com/user-attachments/assets/c4fdf292-3298-4cee-a9e8-a8878fbf6e4d)
+
 
 **Example**
 
@@ -110,6 +115,9 @@ int main()
 #### Object Adapter
 
 The Object Adapter pattern uses composition instead of inheritance. The adapter holds a reference to an instance of the adaptee calss and translates the interface into something the client expects.
+
+![image](https://github.com/user-attachments/assets/555e764e-83d6-4d35-9b25-16257485ae28)
+
 
 ```cpp
 
