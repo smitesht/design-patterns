@@ -10,7 +10,8 @@ It converts the interface of a class into another interface that clients expect.
 
 ### UML Diagram
 
-![image](https://github.com/user-attachments/assets/cf864eec-5e66-47a1-960a-499ed4bbe4d3)
+![image](https://github.com/user-attachments/assets/e8e3898b-1595-4d03-aaef-56c67841eaf5)
+
 
 ### Types of Adapter Patterns
 
