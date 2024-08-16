@@ -12,6 +12,11 @@ This repository contains the SOLID Principles and common design patterns
 
 ## Design Patterns
 
+### Creational Design Pattern
 - [Factory Pattern](https://github.com/smitesht/design-patterns/tree/main/factory-method)
 - [Abstract Factory Pattern](https://github.com/smitesht/design-patterns/tree/main/abstract-factory)
+
+### Structural Design Pattern- 
 - [Decorator Pattern](https://github.com/smitesht/design-patterns/tree/main/Decorator-Pattern)
+- [Adapter Pattern](https://github.com/smitesht/design-patterns/tree/main/adapter-pattern)
+- [Composite Pattern](https://github.com/smitesht/design-patterns/tree/main/composite-pattern)
