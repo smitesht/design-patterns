@@ -1,6 +1,6 @@
 # Composite Design Pattern
 
-- The Composite Pattern is a structural design pattern that allows to compose objects into tree like structures to present part-whole heirarchies.
+- The Composite Pattern is a structural design pattern that allows to compose objects into tree like structures to present part-whole hierarchies.
 
 - It lets clients treat individual objects and compositions of objects uniformly.
 
@@ -12,9 +12,15 @@
 
 ## UNL Diagram
 
+![image](https://github.com/user-attachments/assets/890c3a7f-b3cd-4463-ab4c-befd9ae596a9)
+
+
 ## Example
 
 Let’s consider a restaurant menu as a real-life example of the Composite Pattern. In a restaurant, the menu can be structured hierarchically. There are categories like "Appetizers," "Main Course," "Desserts," etc., and each category can contain individual items like "Spring Rolls," "Grilled Chicken," "Ice Cream," etc. Additionally, some menu items might be composed of other items, such as a "Combo Meal" that includes an appetizer, a main course, and a dessert.
+
+![image](https://github.com/user-attachments/assets/660c9ab7-91af-4c0c-959b-b703d0ce56ce)
+
 
 **Code**
 
