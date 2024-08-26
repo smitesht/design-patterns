@@ -13,7 +13,7 @@ A bridge Design Pattern is a structural design pattern.
 
 Let's consider we are building an eCommerce Portal and need to process the payment in different modes like net banking, credit/debit card, PayPal, and UPI methods. Without using a Bridge Pattern, implementation of the requirement may end up making a large class hierarchy like for each bank we need to build a class for net banking, credit, and debit cards. In this class hierarchy also contains payment through PayPal, Stripe, and all the UPI methods (PhonePe, BharatPe, GPay, etc.). This class hierarchy can be difficult to manage.
 
-Bridge Pattern helps this long class hierarchy into separate abstraction and implementation. We can separate PaymentGatewat to PaymentProcessor.
+Bridge Pattern helps this long class hierarchy into separate abstraction and implementation. We can separate PaymentGateway to PaymentProcessor.
 
 ## UML Diagram
 
