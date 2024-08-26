@@ -15,34 +15,30 @@ public:
 class PlainText : public IText
 {
 private:
-
     string _content;
 public:
-    PlainText(const string content) : _content(content) {
+    PlainText(const string content) : _content(content) { }
 
-    }
-
-    string render() override{
+    string render() override {
         return _content;
     }
+    ~PlainText() {}
 };
 
-class TextDecorator : public IText 
+class TextDecorator : public IText
 {
 private:
     unique_ptr<IText> textComponent;
-
 public:
 
     TextDecorator(unique_ptr<IText> component)
-        :textComponent(std::move(component))
-    {}
-    
+        :textComponent(std::move(component)) {}
+
     string render() override
     {
         return textComponent->render();
     }
-
+    ~TextDecorator(){}
 };
 
 class BoldText : public TextDecorator

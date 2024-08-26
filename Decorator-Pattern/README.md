@@ -23,6 +23,18 @@ We have a requirement to implement a Text class that provides functionalities to
 
 ![image](https://github.com/user-attachments/assets/83e32b50-4413-447f-afa3-53916318d1f7)
 
+## Component Details
+
+**IText**: This defines the common interface for both concrete components and decorators. This allows decorators to be applied to any object that implements the IText interface, promoting flexibility and extensibility.
+
+**PlainText**: This is a concrete component that implements the IText interface. It represents a simple text string without any formatting. This class serves as the foundation upon which decorators can add their functionality.
+
+**TextDecorator**: This is an Abstract Decorator class that implements the IText interface. It contains a reference to an IText object and delegates the "render()" call to this component. The TextDecorator class serves as a base class for all specific decorators like BoldText, ItalicText, UnderlineText etc.This class ensures that all decorators can be treated as IText objects, enableing the addition of new functionalities without modifying existing code.
+
+**BoldText**, **ItalicText**, **UnderlineText**: These classes are concrete decorators that extend the TextDecorator class.
+ - **BoldText**: Wraps the text in <b> tags to render it in bold. (This is a psudeo example)
+ - **ItalicText**: Wraps the text in <i> tags to render it in italic. (This is a psudeo example)
+ - **UnderlineText**: Wraps the text in <u> tags to render it in underline. (This is a psudeo example)
 
 ## Code
 
