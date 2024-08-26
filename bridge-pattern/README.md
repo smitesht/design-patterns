@@ -31,7 +31,7 @@ Bridge Pattern helps this long class hierarchy into separate abstraction and imp
 
 - The PaymentProcessor class serves as the abstraction and maintains the reference of the implementor (IPaymentGateway)
 
-**Concrete Implementation ()**
+**Concrete Implementation**
 
 - HDFCBakPaymentProcessor
 - ICICIBankCreditCardPaymentProcessor
