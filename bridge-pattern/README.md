@@ -1,6 +1,6 @@
 # Bridge Design Pattern
 
-A bridge Design Pattern is a structural design pattern.
+- A bridge Design Pattern is a structural design pattern.
 - The intent of the pattern is to separates an abstraction from its implementation so that the two can vary independently.
 - The pattern in particularly useful when we need to extend both sides of the abstraction-implementation relationship independently.
 - The pattern helps to avoid the creation of a large number of subclasses and improves flexibility and extensibility
